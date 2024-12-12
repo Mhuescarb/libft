@@ -12,7 +12,7 @@ ptr = (char *)s;
         i++;
     }
 }
-int main() 
+/*int main() 
 {
     char buffer[10] = "HelloWorld";
     printf("Antes de ft_bzero: %s\n", buffer);
@@ -23,3 +23,4 @@ int main()
     
     return 0;
 }
+*/
