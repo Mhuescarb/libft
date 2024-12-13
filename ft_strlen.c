@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mhuescar <mhuescar@student.42malaga.c      +#+  +:+       +#+        */
+/*   By: mhuescar < mhuescar@student.42malaga.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/10 15:16:23 by mhuescar          #+#    #+#             */
-/*   Updated: 2024/12/10 15:24:41 by mhuescar         ###   ########.fr       */
+/*   Updated: 2024/12/13 13:26:18 by mhuescar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,9 +24,10 @@ int	ft_strlen(char *str)
 	}
 	return (i);
 }
- int	main (void)
+/*
+int	main (void)
 {
 	printf("%d\n", ft_strlen ("maricarmen"));
 	return (0);
 }
-
+*/

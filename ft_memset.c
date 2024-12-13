@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mhuescar < mhuescar@student.42malaga.co    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/12/13 12:31:39 by mhuescar          #+#    #+#             */
+/*   Updated: 2024/12/13 12:36:32 by mhuescar         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
    #include <string.h>
    #include <stdio.h>
 void *ft_memset(void *b, int c, size_t len)
@@ -11,17 +23,14 @@ void *ft_memset(void *b, int c, size_t len)
         ptr[i] = c;
         i++;
     }
-    
     return (b);
 }
-
-
+/*
 int main(void) 
 {
-
     char buffer[10];
     
-    printf("Contenido antes de ft_memset: ");
+    printf("before ft_memset: ");
     for (int i = 0; i < 10; i++) {
         printf("%d ", buffer[i]);
     }
@@ -29,17 +38,17 @@ int main(void)
 
     ft_memset(buffer, 65, 10);
    
-    printf("Contenido después de ft_memset: ");
+    printf(after ft_memset: ");
     for (int i = 0; i < 10; i++) {
         printf("%d ", buffer[i]);
     }
     printf("\n");
 
-    printf("Contenido como caracteres: ");
+    printf("content as charts: ");
     for (int i = 0; i < 10; i++) {
         printf("%c ", buffer[i]);
     }
     printf("\n");
-
     return 0;
 }
+*/

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mhuescar <mhuescar@student.42malaga.c      +#+  +:+       +#+        */
+/*   By: mhuescar < mhuescar@student.42malaga.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/10 12:51:20 by mhuescar          #+#    #+#             */
-/*   Updated: 2024/12/10 13:01:31 by mhuescar         ###   ########.fr       */
+/*   Updated: 2024/12/13 12:27:33 by mhuescar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int 	ft_isalnum(char c)
 	return (0);
 }
 
-int	 main (void)
+/* int	 main (void)
 {
 int x;
 
@@ -26,4 +26,4 @@ x = ft_isalnum ('*');
 printf ("el resultado es: %d", x);
 return (x);
 }
-
+*/
