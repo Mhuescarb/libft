@@ -6,12 +6,11 @@
 /*   By: mhuescar <mhuescar@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/10 15:16:23 by mhuescar          #+#    #+#             */
-/*   Updated: 2024/12/15 10:29:25 by mhuescar         ###   ########.fr       */
+/*   Updated: 2024/12/15 13:12:05 by mhuescar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
-#include <string.h>
 
 int	ft_strlen(char *str)
 {
