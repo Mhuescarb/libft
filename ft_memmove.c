@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mhuescar < mhuescar@student.42malaga.co    +#+  +:+       +#+        */
+/*   By: mhuescar <mhuescar@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/13 12:56:37 by mhuescar          #+#    #+#             */
-/*   Updated: 2024/12/13 13:25:45 by mhuescar         ###   ########.fr       */
+/*   Updated: 2024/12/15 10:29:31 by mhuescar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

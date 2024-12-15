@@ -3,16 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mhuescar < mhuescar@student.42malaga.co    +#+  +:+       +#+        */
+/*   By: mhuescar <mhuescar@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/13 11:49:51 by mhuescar          #+#    #+#             */
-/*   Updated: 2024/12/13 12:27:30 by mhuescar         ###   ########.fr       */
+/*   Updated: 2024/12/15 12:58:59 by mhuescar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdio.h>
 void ft_bzero (void *s, size_t n)
 {
-int i;
+size_t i;
 i = 0;
 char *ptr;
 ptr = (char *)s;
@@ -30,7 +31,6 @@ ptr = (char *)s;
     ft_bzero(buffer, 5);
     
     printf("afer ft_bzero: %s\n", buffer);
-    
     return 0;
 }
 */

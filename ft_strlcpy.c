@@ -1,29 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mhuescar <mhuescar@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/10 13:45:21 by mhuescar          #+#    #+#             */
-/*   Updated: 2024/12/15 10:29:37 by mhuescar         ###   ########.fr       */
+/*   Created: 2024/12/15 10:38:26 by mhuescar          #+#    #+#             */
+/*   Updated: 2024/12/15 13:00:12 by mhuescar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-int ft_isprint (char c)
-{
-	if( c>= 32 && c<= 126)
-		return (1);
-	return (0);
+#include <string.h>
+#include "libft.h"
 
-}
-/*int main (void)
+unsigned int ft_strlcpy (char *dst, char *src, unsigned int size)
 {
- int x;
-
- x = ft_isprint ('\n');
- printf ("el resultado es: %d", x);
- return (0);
+    /*while(src [i] != '/0' && i< size-1)
+    {
+    dst[i] = src [i];
+    i++;
+    }
+        return(ft_strlensrc);*/
+        return (0);
 }
-*/
