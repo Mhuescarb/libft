@@ -1,28 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mhuescar < mhuescar@student.42malaga.co    +#+  +:+       +#+        */
+/*   By: mhuescar <mhuescar@student.42malaga.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/10 15:16:23 by mhuescar          #+#    #+#             */
-/*   Updated: 2024/12/16 12:03:07 by mhuescar         ###   ########.fr       */
+/*   Created: 2024/12/16 11:07:39 by mhuescar          #+#    #+#             */
+/*   Updated: 2024/12/16 11:11:01 by mhuescar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-int	ft_strlen(char *str)
-{
-	int	i;
-	i = 0;
-	while (str[i])
-	{
-		i++;
-	}
-	return (i);
-}
-  int	main (void)
-{
-	printf("%d\n", ft_strlen ("maricarmen"));
-	return (0);
-}
