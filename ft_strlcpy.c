@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mhuescar < mhuescar@student.42malaga.co    +#+  +:+       +#+        */
+/*   By: mhuescar <mhuescar@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/15 10:38:26 by mhuescar          #+#    #+#             */
-/*   Updated: 2024/12/16 14:53:53 by mhuescar         ###   ########.fr       */
+/*   Updated: 2024/12/16 16:38:40 by mhuescar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,6 @@ int	ft_strlen(char *str)
 }
 
 unsigned int ft_strlcpy (char *dst, char *src, unsigned int size)
-
 {
     int i = 0;
     while(src [i] != '\0' && i< size-1)
@@ -35,7 +34,7 @@ unsigned int ft_strlcpy (char *dst, char *src, unsigned int size)
 }
 
 /*#include <stdio.h>
-int main()
+int main(void)
 {
     char src[] = "Hola, mundo!";
     char dst[20]; // Asegúrate de que haya espacio suficiente para la copia
@@ -51,5 +50,4 @@ int main()
     printf("Longitud de la cadena fuente: %u\n", result);
 
     return 0;
-}
-*/
+}*/

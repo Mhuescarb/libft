@@ -3,10 +3,11 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mhuescar <mhuescar@student.42malaga.co    +#+  +:+       +#+        */
+/*   By: mhuescar <mhuescar@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/16 11:07:39 by mhuescar          #+#    #+#             */
-/*   Updated: 2024/12/16 11:11:01 by mhuescar         ###   ########.fr       */
+/*   Updated: 2024/12/16 16:25:53 by mhuescar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+size_t strlcat(char* dst, const char* src, size_t size)

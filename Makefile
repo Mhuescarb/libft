@@ -9,25 +9,25 @@ SRCS = 	ft_isalpha.c \
        	ft_memcpy.c \
 		ft_memmove.c \
 
-OBJS = ${SRCS:.c=.o}
+OBJS = $(SRCS:.c=.o)
 
 NAME = libft.a
 
 CFLAGS = -Wall -Werror -Wextra
 
-.c.o:
-	cc ${CFLAGS} -c $< -o ${<:.c=.o}
+all: $(NAME)
 
-${NAME}: ${OBJS}
-	ar rcs ${NAME} ${OBJS}
+$(NAME): $(OBJS)
+	cc $(CFLAGS) $(OBJS) -o $(NAME)
 
-all: ${NAME}
+%.o: %.c
+	cc $(CFLAGS) -c $< -o $@
 
 clean:
-	rm -f ${OBJS}
+	rm -f $(OBJS)
 
 fclean: clean
-	rm -f ${NAME}
+	rm -f $(NAME)
 
 re: fclean all
 
