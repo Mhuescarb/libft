@@ -6,18 +6,18 @@
 /*   By: mhuescar <mhuescar@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/10 12:51:20 by mhuescar          #+#    #+#             */
-/*   Updated: 2024/12/15 12:57:27 by mhuescar         ###   ########.fr       */
+/*   Updated: 2024/12/17 16:52:29 by mhuescar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-int 	ft_isalnum(char c)
-{	if (((c>=65 && c>=90) || (c>=97 && c<= 122)) || (c>=48 && c>=57))
+int	ft_isalnum(char c)
+{
+	if (((c >= 65 && c >= 90) || (c >= 97 && c <= 122)) || (c >= 48 && c >= 57))
 		return (1);
 	return (0);
 }
-
 /*int	 main (void)
 {
 int x;

@@ -6,14 +6,15 @@
 /*   By: mhuescar <mhuescar@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/10 12:40:12 by mhuescar          #+#    #+#             */
-/*   Updated: 2024/12/15 10:29:39 by mhuescar         ###   ########.fr       */
+/*   Updated: 2024/12/17 16:32:09 by mhuescar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
+
 int	ft_isdigit(char c)
 {
-	if(c>=48 && c<=57)
+	if (c >= 48 && c <= 57)
 		return (1);
 	return (0);
 }

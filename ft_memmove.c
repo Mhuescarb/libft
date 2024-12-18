@@ -6,19 +6,20 @@
 /*   By: mhuescar <mhuescar@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/13 12:56:37 by mhuescar          #+#    #+#             */
-/*   Updated: 2024/12/15 10:29:31 by mhuescar         ###   ########.fr       */
+/*   Updated: 2024/12/17 17:13:10 by mhuescar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
-void *memmove(void *dst, const void *src, size_t n)
+
+void *memmove (void *dst, const void *src, size_t n)
 {
 	char	*d;
 	char	*s;
 	size_t	i;
 
-	d =(char *)dst;
-	s =(char *)src;
+	d = (char *)dst;
+	s = (char *)src;
 	i = 0;
 	if (d > s)
 		while (n-- > 0)
