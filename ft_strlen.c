@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mhuescar <mhuescar@student.42malaga.com    +#+  +:+       +#+        */
+/*   By: mhuescar < mhuescar@student.42malaga.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/10 15:16:23 by mhuescar          #+#    #+#             */
-/*   Updated: 2024/12/17 16:48:38 by mhuescar         ###   ########.fr       */
+/*   Updated: 2024/12/18 12:39:16 by mhuescar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@ int	ft_strlen(char *str)
 
 {
 	int	i;
+
 	i = 0;
 	while (str[i])
 	{
@@ -23,7 +24,7 @@ int	ft_strlen(char *str)
 	}
 	return (i);
 }
-  /*int	main (void)
+/*int	main (void)
 	{
 	printf("%d\n", ft_strlen ("maricarmen!"));
 	return (0);
