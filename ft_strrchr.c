@@ -6,7 +6,7 @@
 /*   By: mhuescar < mhuescar@student.42malaga.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/18 15:40:49 by mhuescar          #+#    #+#             */
-/*   Updated: 2024/12/18 15:58:18 by mhuescar         ###   ########.fr       */
+/*   Updated: 2024/12/19 14:47:00 by mhuescar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ if (s[i] == cc)
     res = (char *) &s[i];
 return (res);
 }
-int main()
+/* int main()
 {
     const char *str = "Hello, world!";
     char *result;
@@ -59,4 +59,4 @@ int main()
         printf("Carácter no encontrado\n");
 
     return 0;
-}
+}/*

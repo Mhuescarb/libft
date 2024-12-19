@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mhuescar <mhuescar@student.42malaga.com    +#+  +:+       +#+        */
+/*   By: mhuescar < mhuescar@student.42malaga.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/15 10:25:37 by mara              #+#    #+#             */
-/*   Updated: 2024/12/15 12:49:19 by mhuescar         ###   ########.fr       */
+/*   Updated: 2024/12/19 18:34:27 by mhuescar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,7 @@ void *ft_memcpy(void *dst, const void *src, size_t n)
 
 if (!dst && !src)
     return(0);
-
-    i =0;
+i = 0;
 while (i < n)
 {
     ((unsigned char *)dst)[i] = ((unsigned char *)src)[i];
@@ -27,7 +26,8 @@ while (i < n)
 return (dst);
 }
 /*
-int main() {
+int main() 
+{
     char src[] = "Hola, mundo!";
     char dst[20];
 

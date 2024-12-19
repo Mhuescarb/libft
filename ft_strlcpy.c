@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mhuescar <mhuescar@student.42malaga.com    +#+  +:+       +#+        */
+/*   By: mhuescar < mhuescar@student.42malaga.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/15 10:38:26 by mhuescar          #+#    #+#             */
-/*   Updated: 2024/12/17 16:44:25 by mhuescar         ###   ########.fr       */
+/*   Updated: 2024/12/19 16:25:30 by mhuescar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,9 +25,9 @@ int	ft_strlen(char *str)
 
 unsigned int ft_strlcpy (char *dst, char *src, unsigned int size)
 {
-	int i;
-	i = 0
-    while (src [i] != '\0' && i< size-1)
+	unsigned int i;
+	i = 0;
+    while (src [i] != '\0' && i < size-1)
     {
         dst[i] = src [i];
 			i++;

@@ -6,7 +6,7 @@
 /*   By: mhuescar < mhuescar@student.42malaga.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/18 13:07:28 by mhuescar          #+#    #+#             */
-/*   Updated: 2024/12/18 15:44:45 by mhuescar         ###   ########.fr       */
+/*   Updated: 2024/12/19 18:34:24 by mhuescar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 char *ft_strchr(const char *s, int c)
 {
     unsigned int    i;
-    char cc = (char)c;
+    char cc = c;
 
     //c = (char) c;// aquí no entiendo lo del cambio de int a char
     i = 0;
@@ -25,7 +25,7 @@ while (s[i])
 {
     
     if (s[i] == cc)
-        return ((char*) &s [i]);
+        return ((char*) &s[i]);
     i++;
 }
 
@@ -33,7 +33,8 @@ if (s[i] == cc)
     return ((char *) &s[i]);
 return (NULL);
 }
-/*int main()
+/*
+int main(void)
 {
     const char *str = "Hola, mundo!";
     char ch = 'm';
@@ -55,4 +56,5 @@ return (NULL);
     }
 
     return 0;
-}*/
+}
+*/

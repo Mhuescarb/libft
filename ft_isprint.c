@@ -3,20 +3,20 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mhuescar <mhuescar@student.42malaga.com    +#+  +:+       +#+        */
+/*   By: mhuescar < mhuescar@student.42malaga.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/10 13:45:21 by mhuescar          #+#    #+#             */
-/*   Updated: 2024/12/15 10:29:37 by mhuescar         ###   ########.fr       */
+/*   Updated: 2024/12/19 18:32:52 by mhuescar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
-int ft_isprint (char c)
+
+int	ft_isprint(char c)
 {
-	if( c>= 32 && c<= 126)
+	if (c >= 32 && c <= 126)
 		return (1);
 	return (0);
-
 }
 /*int main (void)
 {

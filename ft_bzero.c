@@ -6,23 +6,24 @@
 /*   By: mhuescar < mhuescar@student.42malaga.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/13 11:49:51 by mhuescar          #+#    #+#             */
-/*   Updated: 2024/12/16 14:59:07 by mhuescar         ###   ########.fr       */
+/*   Updated: 2024/12/19 19:42:05 by mhuescar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
-void ft_bzero (void *s, size_t n)
 
+void	ft_bzero(void *s, size_t n)
 {
-size_t i;
-i = 0;
-char *ptr;
-ptr = (char *)s;
-    while (i < n)
-    {
-        ptr[i] = 0;
-        i++;
-    }
+	size_t		i;
+	char		*ptr;
+
+	i = 0;
+	ptr = (char *)s;
+	while (i < n)
+	{
+		ptr[i] = 0;
+		i++;
+	}
 }
 /*int main() 
 {
