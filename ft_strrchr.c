@@ -6,11 +6,12 @@
 /*   By: mhuescar < mhuescar@student.42malaga.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/18 15:40:49 by mhuescar          #+#    #+#             */
-/*   Updated: 2024/12/19 14:47:00 by mhuescar         ###   ########.fr       */
+/*   Updated: 2024/12/20 12:23:51 by mhuescar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
+
 char *ft_strrchr(const char *s, int c)
 {
     unsigned int    i;
@@ -29,9 +30,9 @@ while (s[i])
 }
 if (s[i] == cc)
     res = (char *) &s[i];
-return (res);
+	return (res);
 }
-/* int main()
+/*int main()
 {
     const char *str = "Hello, world!";
     char *result;
@@ -57,6 +58,5 @@ return (res);
         printf("Última ocurrencia de 'z': %s\n", result);
     else
         printf("Carácter no encontrado\n");
-
     return 0;
-}/*
+}*/

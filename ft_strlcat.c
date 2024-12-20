@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mhuescar <mhuescar@student.42malaga.com    +#+  +:+       +#+        */
+/*   By: mhuescar < mhuescar@student.42malaga.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/16 11:07:39 by mhuescar          #+#    #+#             */
-/*   Updated: 2024/12/17 17:09:57 by mhuescar         ###   ########.fr       */
+/*   Updated: 2024/12/20 11:13:19 by mhuescar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 int	ft_strlen(const char *str)
 {
 	int	i;
+
 	i = 0;
 	while (str[i])
 	{

@@ -6,18 +6,19 @@
 /*   By: mhuescar < mhuescar@student.42malaga.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/18 12:35:42 by mhuescar          #+#    #+#             */
-/*   Updated: 2024/12/18 12:49:52 by mhuescar         ###   ########.fr       */
+/*   Updated: 2024/12/20 11:18:21 by mhuescar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_tolower(int c)
-{
-    if (c >= 65 && c<= 90)
-        return(c + 32);
-    return (c);
-
-}
 #include <stdio.h>
+
+int	ft_tolower(int c)
+{
+	if (c >= 65 && c <= 90)
+		return (c + 32);
+	return (c);
+}
+
 /*
 int main() 
 {
