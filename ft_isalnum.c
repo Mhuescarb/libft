@@ -6,16 +6,16 @@
 /*   By: mhuescar <mhuescar@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/10 12:51:20 by mhuescar          #+#    #+#             */
-/*   Updated: 2024/12/17 16:52:29 by mhuescar         ###   ########.fr       */
+/*   Updated: 2024/12/20 19:08:14 by mhuescar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
-int	ft_isalnum(char c)
+int	ft_isalnum(int c)
 {
-	if (((c >= 65 && c >= 90) || (c >= 97 && c <= 122)) || (c >= 48 && c >= 57))
-		return (1);
+	if ((c >= 48 && c <= 57) || (c >= 65 && c <= 90) || (c >= 97 && c <= 122))
+		return (c);
 	return (0);
 }
 /*int	 main (void)

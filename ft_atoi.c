@@ -3,19 +3,20 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mhuescar < mhuescar@student.42malaga.co    +#+  +:+       +#+        */
+/*   By: mhuescar <mhuescar@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/19 17:47:15 by mhuescar          #+#    #+#             */
-/*   Updated: 2024/12/19 18:02:53 by mhuescar         ###   ########.fr       */
+/*   Updated: 2024/12/20 17:47:52 by mhuescar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
 int	ft_atoi(const char *str)
 {
 	int	result;
 	int	sing;
-	int i;
+	int	i;
 
 	result = 0;
 	sing = 1;
@@ -37,13 +38,14 @@ int	ft_atoi(const char *str)
 	result *= sing;
 	return (result);
 }
+/*
 #include <stdio.h>
 int main(void)
 {
     // Ejemplos de cadenas de prueba
     const char *test1 = "   12345";   // Número positivo con espacios antes
     const char *test2 = "  -42";      // Número negativo con espacios antes
-    const char *test3 = "42abc";      // Número seguido de caracteres no numéricos
+    const char *test3 = "42abc";      // Número seguido de caracteres no nu
     const char *test4 = "  00123";    // Número con ceros a la izquierda
     const char *test5 = "  +99";      // Número positivo con un signo '+'
     const char *test6 = "   0";       // Número cero con espacios antes
@@ -58,3 +60,4 @@ int main(void)
 
     return 0;
 }
+*/

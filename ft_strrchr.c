@@ -3,33 +3,32 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mhuescar < mhuescar@student.42malaga.co    +#+  +:+       +#+        */
+/*   By: mhuescar <mhuescar@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/18 15:40:49 by mhuescar          #+#    #+#             */
-/*   Updated: 2024/12/20 12:23:51 by mhuescar         ###   ########.fr       */
+/*   Updated: 2024/12/20 17:12:50 by mhuescar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-char *ft_strrchr(const char *s, int c)
+char	*ft_strrchr(const char *s, int c)
 {
-    unsigned int    i;
-    char *res;
-    char cc; 
+	unsigned int	i;
+	char			*res;
+	char			cc;
 
-    cc = (char) c;
-    res = NULL; 
-    i = 0;
-
-while (s[i])
-{
-    if (s[i] == cc)
-        res = (char*) &s[i];
-    i++;
-}
-if (s[i] == cc)
-    res = (char *) &s[i];
+	cc = (char) c;
+	res = NULL;
+	i = 0;
+	while (s[i])
+	{
+		if (s[i] == cc)
+			res = (char *) &s[i];
+		i++;
+	}
+	if (s[i] == cc)
+		res = (char *) &s[i];
 	return (res);
 }
 /*int main()

@@ -3,45 +3,41 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mhuescar < mhuescar@student.42malaga.co    +#+  +:+       +#+        */
+/*   By: mhuescar <mhuescar@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/19 14:58:53 by mhuescar          #+#    #+#             */
-/*   Updated: 2024/12/19 17:39:46 by mhuescar         ###   ########.fr       */
+/*   Updated: 2024/12/20 17:22:10 by mhuescar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
-char *ft_strnstr(const char *haystack, const char *needle, size_t len)
-{
-    size_t	i;
-    size_t	j;
-    
-    i = 0;
-    j = 0;
 
-    if (needle[0] == 0)
-        return ((char *) haystack);
-    
-    while (haystack[i] && i < len)
-    {
-        while (haystack[i + j] == needle[j] && haystack[i + j] && i + j < len)
-        {
-            
-            j++;
-           
-            if (needle[j] == 0)
-                return ((char *) haystack + i);
-        }
-        i++;
-        
-        j = 0;
-    }
-    return (0);
+char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
+{
+	size_t		i;
+	size_t		j;
+
+	i = 0;
+	j = 0;
+	if (needle[0] == 0)
+		return ((char *) haystack);
+	while (haystack[i] && i < len)
+	{
+		while (haystack[i + j] == needle[j] && haystack[i + j] && i + j < len)
+		{
+			j++;
+			if (needle[j] == 0)
+				return ((char *) haystack + i);
+		}
+		i++;
+		j = 0;
+	}
+	return (0);
 }
-#include <string.h>
-/*int main()
-{
 
+/* 
+int main()
+{
     const char *haystack1 = "Hola, Mundo!";
     const char *needle1 = "Mundo";
     const char *needle2 = "Universo";

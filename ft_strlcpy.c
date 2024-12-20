@@ -3,54 +3,53 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mhuescar < mhuescar@student.42malaga.co    +#+  +:+       +#+        */
+/*   By: mhuescar <mhuescar@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/15 10:38:26 by mhuescar          #+#    #+#             */
-/*   Updated: 2024/12/20 11:12:03 by mhuescar         ###   ########.fr       */
+/*   Updated: 2024/12/20 20:16:27 by mhuescar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*#include "libft.h"*/
+#include "libft.h"
 
-int	ft_strlen(char *str)
+int	ft_strlen(const char *str)
 {
 	int	i;
 
 	i = 0;
-	while (str[i])
+	while (str[i] != '\0')
 	{
 		i++;
 	}
 	return (i);
 }
 
-unsigned int	ft_strlcpy(char *dst, char *src, unsigned int size)
+size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
-	unsigned int	i;
+	size_t	i;
 
 	i = 0;
+	if (size == 0)
+		return (ft_strlen (src));
 	while (src [i] != '\0' && i < size -1)
 	{
 		dst[i] = src [i];
 		i++;
+		dst [i] = '\0';
 	}
 	return (ft_strlen(src));
 }
-/*#include <stdio.h>
-int main(void)
+
+/* #include <stdio.h>
+int main()
 {
     char src[] = "Hola, mundo!";
-    char dst[20]; // Asegúrate de que haya espacio suficiente para la copia
+    char dst[10];
 
-    unsigned int size = 5; // Tamaño para la copia
+    size_t copied = ft_strlcpy(dst, src, sizeof(dst));
 
-    // Llamada a ft_strlcpy
-    unsigned int result = ft_strlcpy(dst, src, size);
-
-    // Mostrar resultados
-    printf("Cadena fuente: %s\n", src);
-    printf("Cadena destino: %s\n", dst);
-    printf("Longitud de la cadena fuente: %u\n", result);
+    printf("Cadena copiada: %s\n", dst);
+    printf("Longitud de la cadena original: %zu\n", copied);
 
     return 0;
 }*/
