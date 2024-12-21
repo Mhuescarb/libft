@@ -6,7 +6,7 @@
 /*   By: mhuescar <mhuescar@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/21 12:15:42 by mhuescar          #+#    #+#             */
-/*   Updated: 2024/12/21 14:27:53 by mhuescar         ###   ########.fr       */
+/*   Updated: 2024/12/21 18:07:03 by mhuescar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,12 +16,11 @@ char	*ft_strdup(const char *s1)
 {
 	char	*dest;
 	size_t	i;
-	i = 0;
 
+	i = 0;
 	dest = (char *) malloc (ft_strlen(s1) + 1);
 	if (!dest)
 		return (NULL);
-	
 	while (s1[i])
 	{
 		dest[i] = s1 [i];
@@ -30,7 +29,7 @@ char	*ft_strdup(const char *s1)
 	dest[i] = '\0';
 	return (dest);
 }
-#include <stdio.h>
+/*#include <stdio.h>
 #include <stdlib.h>
 #include "libft.h"
 
@@ -52,6 +51,5 @@ int main()
 
     // Recuerda liberar la memoria después de usarla
     free(copia);
-
     return (0);
-}
+}*/
