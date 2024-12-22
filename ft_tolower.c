@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mhuescar < mhuescar@student.42malaga.co    +#+  +:+       +#+        */
+/*   By: mhuescar <mhuescar@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/18 12:35:42 by mhuescar          #+#    #+#             */
-/*   Updated: 2024/12/20 11:18:21 by mhuescar         ###   ########.fr       */
+/*   Updated: 2024/12/22 19:04:14 by mhuescar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
