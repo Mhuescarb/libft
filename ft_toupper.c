@@ -6,7 +6,7 @@
 /*   By: mhuescar <mhuescar@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/18 12:12:22 by mhuescar          #+#    #+#             */
-/*   Updated: 2024/12/20 20:58:59 by mhuescar         ###   ########.fr       */
+/*   Updated: 2024/12/22 19:01:22 by mhuescar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@ int	ft_toupper(int c)
 		return (c -32);
 	return (c);
 }
-
 /*
 #include <stdio.h>
 int main() 
