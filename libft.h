@@ -6,7 +6,7 @@
 /*   By: mhuescar <mhuescar@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/21 17:56:55 by mhuescar          #+#    #+#             */
-/*   Updated: 2024/12/22 13:21:14 by mhuescar         ###   ########.fr       */
+/*   Updated: 2024/12/22 21:10:18 by mhuescar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,5 +41,6 @@ void	*ft_calloc(size_t count, size_t size);
 char	*ft_strdup(const char *s1);
 char	*ft_substr(const char *s, unsigned int start, size_t len);
 char	*ft_strjoin(const char *s1, const char*s2);
+char	*ft_strtrim(const char *s1, const char *set);
 
 #endif
