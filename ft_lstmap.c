@@ -6,7 +6,7 @@
 /*   By: mhuescar <mhuescar@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/27 16:22:43 by mhuescar          #+#    #+#             */
-/*   Updated: 2024/12/27 18:36:31 by mhuescar         ###   ########.fr       */
+/*   Updated: 2024/12/28 10:24:42 by mhuescar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,27 +16,30 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
 	t_list	*new_list;
 	t_list	*new_obj;
+	void	*content;
 
 	if (!lst || !f || !del)
 		return (NULL);
 	new_list = NULL;
 	while (lst)
 	{
-		new_obj = ft_lstnew(f(lst->content));
+		content = f(lst->content);
+		new_obj = ft_lstnew(content);
 		if (!new_obj)
 		{
+			del(content);
 			ft_lstclear(&new_list, del);
 			return (NULL);
 		}
-        if (!new_list)
-            new_list = new_obj;
-        else 
-		    ft_lstadd_back(&new_list, new_obj);
+		if (!new_list)
+			new_list = new_obj;
+		else
+			ft_lstadd_back(&new_list, new_obj);
 		lst = lst->next;
 	}
 	return (new_list);
 }
-/*pa
+/*
 #include "libft.h"
 #include <stdio.h>
 #include <stdlib.h>
