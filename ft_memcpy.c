@@ -6,11 +6,11 @@
 /*   By: mhuescar <mhuescar@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/15 10:25:37 by mara              #+#    #+#             */
-/*   Updated: 2024/12/20 17:21:47 by mhuescar         ###   ########.fr       */
+/*   Updated: 2024/12/28 11:28:55 by mhuescar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
